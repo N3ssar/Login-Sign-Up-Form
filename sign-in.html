@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="login-svgrepo-com.svg">
+</head>
+
+<body>
+    <div class="container">
+        <section class="sign-in-box">
+            <h2><i class="fas fa-user-check"></i> Sign In</h2>
+            <form action="/signin" method="post">
+                <div class="form-group">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    <i class="fas fa-envelope input-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                    <i class="fas fa-lock input-icon"></i>
+                </div>
+                <button type="submit"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="sign-up.html"><i class="fas fa-user-plus"></i> Sign Up</a></p>
+        </section>
+    </div>
+</body>
+
+</html>

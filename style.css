@@ -1,0 +1,131 @@
+:root {
+    --background-body-color: #8194aa;
+    --background-form-color: #fff;
+    --font-size-base: 10px;
+    --items-gap: 1rem;
+    --primary-color: #333;
+    --secondary-color: #444;
+}
+
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: var(--font-size-base);
+}
+
+body {
+    background-color: var(--background-body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    background: var(--background-form-color);
+    width: 90%;
+    max-width: 400px;
+    padding: 4rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,.20);
+}
+
+/* Heading styles */
+h2 {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--items-gap);
+    user-select: none;
+    text-align: center;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem; /* Adjust padding to fit the icon */
+    border: 1px solid #e4e4e4;
+    border-radius: 3rem;
+    background-color: #e4e4e4;
+    height: 5rem;
+    transition: .3s;
+}
+
+input:focus {
+    transform: scaleX(1.03);
+    outline: solid 1px #ccc;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Move to the right side */
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+button {
+    padding: 1.3rem 2.3rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: .2s;
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.7rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Text styles */
+p, a {
+    display: inline-block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        width: 95%;
+    }
+}
