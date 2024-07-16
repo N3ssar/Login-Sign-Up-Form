@@ -1,5 +1,5 @@
 :root {
-    --background-body-color: #8194aa;
+  --background-body-gradient: linear-gradient(to bottom right, #8194aa, #215175da);
     --background-form-color: #fff;
     --font-size-base: 10px;
     --items-gap: 1rem;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-color: var(--background-body-color);
+    background: var(--background-body-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
